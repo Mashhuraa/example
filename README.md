@@ -43,18 +43,22 @@ Output:
 
 Steps:
 ------------------------------------
-The string s is split into a list of words using the split method with a space as the separator.
+The string "s" is split into a list of words using the split method with a space as the separator.
 It prints the list of words for debugging purposes.
-An empty list words_only is initialized to store non-empty words.
-A for-loop iterates over the list words, and non-empty words are appended to the words_only list.
+An empty list "words_only" is initialized to store non-empty words.
+A "for"-loop iterates over the list words, and non-empty words are appended to the " words_only " list.
 The list of non-empty words is printed for debugging purposes.
-The last word from the words_only list is identified.
+The last word from the " words_only list " is identified.
 The last word is printed for debugging purposes.
 The length of the last word is printed and returned.
 
 Dependencies
 --------------------------
 This script does not have any external dependencies.
+
+Notes
+------------------------------
+Ensure you replace " Hi world again " with any other string to test different cases.
 
 License
 --------------------------
