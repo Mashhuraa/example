@@ -3,7 +3,7 @@ Length of Last Word
 --------------------------
 Overview
 -------------------------
-This Python script defines a class Solution with a method --"lengthOfLastWord"-- that computes the length of the last word in a given string. It splits the string by spaces and returns the length of the last non-empty word.
+This Python script defines a class Solution with a method "lengthOfLastWord" that computes the length of the last word in a given string. It splits the string by spaces and returns the length of the last non-empty word.
 
 Usage
 -------------------------
