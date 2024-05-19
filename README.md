@@ -21,9 +21,13 @@ python main.py
 Example Output:
 ------------------------
 words: ['', 'Hi', 'world', '', 'again', '', '', '']
+
 words only: ['Hi', 'world', 'again']
+
 last word: again
+
 5
+
 length: 5
 
 Code Explanation
