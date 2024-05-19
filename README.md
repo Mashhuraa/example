@@ -1,57 +1,87 @@
+------------------------
+Length of Last Word
+--------------------------
+Overview
+-------------------------
+This Python script defines a class Solution with a method lengthOfLastWord that computes the length of the last word in a given string. It splits the string by spaces and returns the length of the last non-empty word.
 
----
+Usage
+-------------------------
+Clone the Repository:
 
-# Length of Last Word
+bash
+Copy code
+git clone https://github.com/your_username/length_of_last_word.git
 
-## Overview
+Navigate to the Directory:
+-----------------------------------------
+bash
+Copy code
+cd length_of_last_word
+Run the Script:
+Ensure you have Python installed on your system. You can run the script by executing:
 
-This Python script defines a class `Solution` with a method `lengthOfLastWord` that computes the length of the last word in a given string. It splits the string by spaces and returns the length of the last non-empty word.
+bash
+Copy code
+python main.py
+Example Output:
 
-## Usage
+perl
+Copy code
+words: ['', 'Hi', 'world', '', 'again', '', '', '']
+words only: ['Hi', 'world', 'again']
+last word: again
+5
+length: 5
+Code Explanation
+Method: lengthOfLastWord
+Input:
+s (str): The input string.
+Output:
+(int): The length of the last word.
+Steps:
+The string s is split into a list of words using the split method with a space as the separator.
+It prints the list of words for debugging purposes.
+An empty list words_only is initialized to store non-empty words.
+A for-loop iterates over the list words, and non-empty words are appended to the words_only list.
+The list of non-empty words is printed for debugging purposes.
+The last word from the words_only list is identified.
+The last word is printed for debugging purposes.
+The length of the last word is printed and returned.
+Example Usage
+python
+Copy code
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """ 
+        :type s: str
+        :rtype: int
+        """
+        words = s.split(" ")
+        print(f'words: {words}')
+        words_only = []
+        for word in words:
+            if len(word)>0:
+                words_only.append(word)
+        print(f'words only: {words_only}')
+        last_word = words_only[-1]
+        print(f'last word: {last_word}')
+        print(len(last_word))
+        return len(last_word)
+    
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your_username/length_of_last_word.git
-   ```
+sl = Solution()
 
-2. **Navigate to the Directory:**
-   ```bash
-   cd length_of_last_word
-   ```
+s = ' Hi world  again   '
 
-3. **Run the Script:**
-   ```bash
-   python main.py
-   ```
-
-4. **Example Output:**
-   ```
-   length: 5
-   ```
-
-## Code Explanation
-
-- The `lengthOfLastWord` method splits the input string by spaces to create a list of words.
-- It filters out any empty strings from the list.
-- It retrieves the last word from the filtered list.
-- It calculates and returns the length of the last word.
-
-## Inputs
-
-You can provide different input strings by modifying the value of the variable `s` in the script.
-
-```python
-s = ' hello world  again yeah  '
-```
-
-## Dependencies
-
+lng = sl.lengthOfLastWord(s)
+print(f'length: {lng}')
+Notes:
+Ensure you replace ' Hi world again ' with any other string to test different cases.
+Dependencies
 This script does not have any external dependencies.
 
-## License
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to customize the README file further based on your preferences and additional information you want to include.
