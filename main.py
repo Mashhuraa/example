@@ -1,0 +1,27 @@
+
+
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """ 
+        :type s: str
+        :rtype: int
+        """
+        words = s.split(" ")
+        # words_only = [word for word in words if len(word)>0 ]
+        words_only = []
+        for word in words:
+            if len(word)>0:
+                words_only.append(word)
+        print(f'words only: {words_only}')
+        last_word = words_only[-1]
+        print(f'last word: {last_word}')
+        print(len(last_word))
+        return len(last_word)
+    
+
+sl = Solution()
+
+s = ' hello world  again yeah  '
+
+lng = sl.lengthOfLastWord(s)
+print(f'length: {lng}')
