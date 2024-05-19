@@ -8,32 +8,27 @@ This Python script defines a class Solution with a method lengthOfLastWord that 
 Usage
 -------------------------
 Clone the Repository:
-
-bash
-Copy code
+-----------------------
 git clone https://github.com/your_username/length_of_last_word.git
 
 Navigate to the Directory:
------------------------------------------
-bash
-Copy code
+---------------------------------
 cd length_of_last_word
+
 Run the Script:
-Ensure you have Python installed on your system. You can run the script by executing:
-
-bash
-Copy code
+---------------------------------
 python main.py
-Example Output:
 
-perl
-Copy code
+Example Output:
+---------------------------------
 words: ['', 'Hi', 'world', '', 'again', '', '', '']
 words only: ['Hi', 'world', 'again']
 last word: again
 5
 length: 5
+
 Code Explanation
+--------------------------
 Method: lengthOfLastWord
 Input:
 s (str): The input string.
@@ -48,9 +43,9 @@ The list of non-empty words is printed for debugging purposes.
 The last word from the words_only list is identified.
 The last word is printed for debugging purposes.
 The length of the last word is printed and returned.
+
 Example Usage
-python
-Copy code
+--------------------------------
 class Solution(object):
     def lengthOfLastWord(self, s):
         """ 
@@ -76,12 +71,13 @@ s = ' Hi world  again   '
 
 lng = sl.lengthOfLastWord(s)
 print(f'length: {lng}')
-Notes:
-Ensure you replace ' Hi world again ' with any other string to test different cases.
+
 Dependencies
+----------------------------
 This script does not have any external dependencies.
 
 License
+------------------------------
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
