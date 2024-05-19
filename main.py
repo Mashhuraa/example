@@ -21,7 +21,7 @@ class Solution(object):
 
 sl = Solution()
 
-s = ' hello world  again yeah  '
+s = ' hello world  again '
 
 lng = sl.lengthOfLastWord(s)
 print(f'length: {lng}')
