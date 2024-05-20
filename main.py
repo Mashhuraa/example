@@ -7,7 +7,7 @@ class Solution(object):
         :rtype: int
         """
         words = s.split(" ")
-        # words_only = [word for word in words if len(word)>0 ]
+        print(f'words: {words}')
         words_only = []
         for word in words:
             if len(word)>0:
@@ -21,7 +21,7 @@ class Solution(object):
 
 sl = Solution()
 
-s = ' hello world  again '
+s = ' Hi world  again   '
 
 lng = sl.lengthOfLastWord(s)
-print(f'length: {lng}')
+print(f'length: {lng}') 
